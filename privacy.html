@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Contact Us | YardScape Botanica – Red Hot Gardening Experts</title>
+    <meta name="description" content="Reach out to YardScape Botanica for bespoke garden designs, plant care advice, and landscaping questions. Our red-themed gardening experts are here to help you grow.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff9f9;
+            color: #2c1810;
+            line-height: 1.5;
+        }
+
+        /* RED THEME VARIABLES (same as main site) */
+        :root {
+            --primary-red: #b22222;
+            --dark-red: #8b0000;
+            --light-red: #ffcccc;
+            --accent-gold: #d4af37;
+            --earth-brown: #5c4033;
+            --leaf-green: #2e6b2f;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--dark-red), var(--primary-red));
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+        .logo p {
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            color: var(--accent-gold);
+            transform: translateY(-2px);
+        }
+
+        /* page banner */
+        .page-banner {
+            background: linear-gradient(120deg, #5e1a1a, #9e2a2a);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .page-banner h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        .page-banner p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* contact main layout */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .contact-info {
+            background: white;
+            border-radius: 28px;
+            padding: 2rem;
+            box-shadow: 0 15px 30px rgba(139, 0, 0, 0.1);
+            border: 1px solid #ffdddd;
+        }
+
+        .contact-info h2, .contact-form h2 {
+            font-size: 1.9rem;
+            color: var(--primary-red);
+            border-left: 5px solid var(--primary-red);
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-detail {
+            margin: 2rem 0;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.8rem;
+            font-size: 1.1rem;
+            flex-wrap: wrap;
+        }
+        .info-icon {
+            background: var(--light-red);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--dark-red);
+        }
+        .info-text {
+            flex: 1;
+        }
+        .info-text strong {
+            color: var(--dark-red);
+        }
+        .info-text a {
+            color: var(--primary-red);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .info-text a:hover {
+            text-decoration: underline;
+            color: var(--accent-gold);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        .social-icon {
+            background: var(--earth-brown);
+            color: white;
+            padding: 0.6rem 1rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .social-icon:hover {
+            background: var(--primary-red);
+            transform: translateY(-3px);
+        }
+
+        /* contact form styling */
+        .contact-form {
+            background: white;
+            border-radius: 28px;
+            padding: 2rem;
+            box-shadow: 0 15px 30px rgba(139, 0, 0, 0.1);
+            border: 1px solid #ffdddd;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--earth-brown);
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #ffc6c6;
+            border-radius: 50px;
+            font-family: inherit;
+            font-size: 1rem;
+            background: #fffdfd;
+            transition: 0.2s;
+        }
+        textarea {
+            border-radius: 24px;
+            resize: vertical;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary-red);
+            box-shadow: 0 0 0 3px rgba(178,34,34,0.2);
+        }
+        .btn-submit {
+            background: var(--primary-red);
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 60px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s;
+            margin-top: 0.5rem;
+        }
+        .btn-submit:hover {
+            background: var(--dark-red);
+            transform: scale(0.98);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        .form-message {
+            margin-top: 1rem;
+            text-align: center;
+            font-weight: bold;
+        }
+        .success-msg {
+            color: #2e6b2f;
+            background: #e0f2e0;
+            padding: 10px;
+            border-radius: 50px;
+        }
+        .error-msg {
+            color: #b22222;
+            background: #ffe0e0;
+            padding: 10px;
+            border-radius: 50px;
+        }
+
+        /* additional info - map, faq, hours */
+        .extra-contact {
+            background: #fff5f0;
+            border-radius: 28px;
+            padding: 2rem;
+            margin: 2rem 0 3rem;
+            border-left: 6px solid var(--primary-red);
+        }
+        .hours-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .hours-card {
+            background: white;
+            border-radius: 20px;
+            padding: 1rem 1.5rem;
+            flex: 1;
+            min-width: 140px;
+            text-align: center;
+            border: 1px solid #ffc2c2;
+        }
+        .hours-card h4 {
+            color: var(--primary-red);
+            margin-bottom: 0.5rem;
+        }
+        .map-placeholder {
+            background: #ded0c4;
+            border-radius: 28px;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 1.5rem;
+            background-image: radial-gradient(circle at 10% 30%, #daa06a10 2%, transparent 2.5%);
+            background-size: 20px 20px;
+        }
+        .badge {
+            background: var(--accent-gold);
+            color: var(--dark-red);
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #2c1810;
+            color: #f0e6d0;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .footer-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .copyright {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        @media (max-width: 780px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1.2rem;
+            }
+            .page-banner h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container nav">
+        <div class="logo">
+            <h1>🌿 YardScape Botanica</h1>
+            <p>Red-hot gardening wisdom</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="page-banner">
+    <div class="container">
+        <h1>🌺 Let's Cultivate Together</h1>
+        <p>Have a burning question about red-themed gardens, need design consultation, or simply want to say hello? Our botanical experts are ready to dig in.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="contact-grid">
+        <!-- left column: contact details + social + visit -->
+        <div class="contact-info">
+            <h2>❤️ Rooted Connections</h2>
+            <div class="info-detail">
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-text"><strong>Garden Headquarters</strong><br>1262 Red Maple Lane, Garden Valley, CO 80241</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-text"><strong>Call our hotline</strong><br><a href="tel:+13035551234">+1 (303) 555-1234</a> (Mon–Sat, 9am–6pm MT)</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div class="info-text"><strong>Email Us</strong><br><a href="mailto:hello@yardscapebotanica.com">hello@yardscapebotanica.com</a><br>Response within 24h</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">🕒</div>
+                    <div class="info-text"><strong>Garden Center Hours</strong><br>Mon–Fri: 9am–7pm | Sat: 10am–5pm | Sun: Closed (nature day)</div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon">📘 Instagram</a>
+                <a href="#" class="social-icon">🐦 X (Garden Talk)</a>
+                <a href="#" class="social-icon">🌿 Pinterest</a>
+                <a href="#" class="social-icon">🎥 YouTube</a>
+            </div>
+            <div class="map-placeholder" style="margin-top: 2rem;">
+                <span class="badge">📍 Virtual Green Map</span>
+                <p style="margin-bottom: 0.5rem;"><strong>YardScape Botanica • Red District</strong><br>Located near the historic Rose Arbor. Visit our display gardens: crimson perennial border, Japanese maple grove, and edible red showcase.</p>
+                <p>🗺️ <em>Interactive directions sent upon appointment — or enjoy our 360° virtual garden tour online.</em></p>
+            </div>
+        </div>
+
+        <!-- right column: interactive contact form with front-end validation -->
+        <div class="contact-form">
+            <h2>🌹 Send Us a Whisper (or a Shout)</h2>
+            <form id="gardenerContactForm">
+                <div class="form-group">
+                    <label for="fullname">Full name *</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="e.g., Scarlet Gardener" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address *</label>
+                    <input type="email" id="email" name="email" placeholder="hello@bloom.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone (optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1 303 555 6789">
+                </div>
+                <div class="form-group">
+                    <label for="inquiry">Type of inquiry *</label>
+                    <select id="inquiry" name="inquiry" required>
+                        <option value="">-- Select one --</option>
+                        <option value="garden-design">Garden Design & Red Theme Consultation</option>
+                        <option value="plant-care">Plant Care / Pest Emergency</option>
+                        <option value="workshop">Workshops & Events</option>
+                        <option value="partnership">Partnership / Media</option>
+                        <option value="other">Other green thoughts</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your message *</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your gardening dreams, challenges, or specific red plant questions... We're all ears (and green thumbs)." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">🌱 Cultivate Conversation</button>
+                <div id="formFeedback" class="form-message"></div>
+            </form>
+            <p style="margin-top: 1rem; font-size: 0.8rem; text-align: center; color: #8b5a4b;">By submitting, you agree to our gardening privacy practices — we’ll never sell your data, only plant seeds of knowledge.</p>
+        </div>
+    </div>
+
+    <!-- extra helpful info: office hours Q&A, emergency support, FAQ style -->
+    <div class="extra-contact">
+        <h3 style="color: var(--primary-red); margin-bottom: 0.5rem;">🔥 Frequently Asked Routes</h3>
+        <div class="hours-grid">
+            <div class="hours-card">
+                <h4>✂️ Design Consult</h4>
+                <p>Virtual or in-person sessions start at $199. Book via contact form – our red specialists will draft mood boards.</p>
+            </div>
+            <div class="hours-card">
+                <h4>🌿 Plant SOS</h4>
+                <p>Urgent care for your red roses? Text photos to +1 (303) 555-1234 for quick diagnosis (free for members).</p>
+            </div>
+            <div class="hours-card">
+                <h4>📦 Crimson Seed Club</h4>
+                <p>Monthly rare red seed delivery. Sign up at our shop. Contact us for discount codes.</p>
+            </div>
+        </div>
+        <div style="margin-top: 1.5rem; background: #ffece5; padding: 1rem; border-radius: 20px;">
+            <p><strong>🌍 Need immediate gardening advice?</strong> Our red-hot helpline is available +1 (303) 555-1234 (press 2 for plant emergencies). For seasonal workshops and Saturday “Red Roast” Q&A sessions, check our events calendar.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container footer-info">
+        <div class="address">
+            📍 1262 Red Maple Lane, Garden Valley, CO 80241
+        </div>
+        <div class="contact">
+            📞 <a href="tel:+13035551234" style="color: var(--accent-gold);">+1 (303) 555-1234</a>  |  ✉️ <a href="mailto:hello@yardscapebotanica.com" style="color: var(--accent-gold);">hello@yardscapebotanica.com</a>
+        </div>
+    </div>
+    <div class="copyright">
+        © 2025 YardScape Botanica – Cultivating passion, one red petal at a time. All content uniquely crafted for fiery gardens. | <a href="privacy.html" style="color:#d4af37;">Privacy</a> | <a href="cookies.html" style="color:#d4af37;">Cookies</a>
+    </div>
+</footer>
+
+<script>
+    // Contact form handling: simple validation, success simulation with no actual backend for demo
+    const contactForm = document.getElementById('gardenerContactForm');
+    const feedbackDiv = document.getElementById('formFeedback');
+
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // reset previous messages
+        feedbackDiv.innerHTML = '';
+        
+        // inline validation
+        const fullname = document.getElementById('fullname').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const inquiry = document.getElementById('inquiry').value;
+        const message = document.getElementById('message').value.trim();
+        
+        if (!fullname) {
+            showMessage('Please enter your full name.', 'error');
+            return;
+        }
+        if (!email) {
+            showMessage('Email address is required.', 'error');
+            return;
+        }
+        if (!isValidEmail(email)) {
+            showMessage('Please provide a valid email address (e.g., name@domain.com).', 'error');
+            return;
+        }
+        if (!inquiry) {
+            showMessage('Please select a type of inquiry.', 'error');
+            return;
+        }
+        if (!message || message.length < 5) {
+            showMessage('Please write a message (at least 5 characters). We love details!', 'error');
+            return;
+        }
+        
+        // simulate successful submission (demo environment)
+        // In real scenario you'd send data to backend endpoint.
+        showMessage('✨ Thank you, ' + fullname + '! Your message has sprouted successfully. Our gardening team will reply within 24h (often sooner). Meanwhile, watch for our red-hot newsletter! 🌹', 'success');
+        contactForm.reset();
+        
+        // Optional: you could log data to console for dev
+        console.log({
+            name: fullname,
+            email: email,
+            phone: document.getElementById('phone').value,
+            inquiry: inquiry,
+            message: message,
+            submittedAt: new Date().toISOString()
+        });
+    });
+    
+    function isValidEmail(email) {
+        const emailPattern = /^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$/;
+        return emailPattern.test(email);
+    }
+    
+    function showMessage(msg, type) {
+        const msgDiv = document.createElement('div');
+        msgDiv.textContent = msg;
+        msgDiv.className = type === 'success' ? 'success-msg' : 'error-msg';
+        msgDiv.style.padding = '12px';
+        msgDiv.style.borderRadius = '50px';
+        msgDiv.style.marginTop = '1rem';
+        msgDiv.style.fontWeight = 'bold';
+        feedbackDiv.appendChild(msgDiv);
+        
+        // auto clear after 7 seconds
+        setTimeout(() => {
+            if (feedbackDiv.contains(msgDiv)) {
+                msgDiv.remove();
+            }
+        }, 7000);
+    }
+</script>
+<!-- The page includes all functional contact elements, professional red theme, and extended garden-specific information. -->
+</body>
+</html>

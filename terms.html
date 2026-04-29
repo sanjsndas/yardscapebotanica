@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Terms of Service | YardScape Botanica - Red-Themed Gardening Experts</title>
+    <meta name="description" content="Read YardScape Botanica's Terms of Service. Understand guidelines, user responsibilities, intellectual property, and disclaimers for using our gardening resources.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff9f9;
+            color: #2c1810;
+            line-height: 1.6;
+        }
+
+        /* RED THEME VARIABLES */
+        :root {
+            --primary-red: #b22222;
+            --dark-red: #8b0000;
+            --light-red: #ffcccc;
+            --accent-gold: #d4af37;
+            --earth-brown: #5c4033;
+            --leaf-green: #2e6b2f;
+            --soft-cream: #fff5f0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--dark-red), var(--primary-red));
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+        .logo p {
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            color: var(--accent-gold);
+            transform: translateY(-2px);
+        }
+
+        /* Page banner */
+        .page-banner {
+            background: linear-gradient(105deg, #631010 0%, #a13737 100%);
+            padding: 3rem 0;
+            text-align: center;
+            color: white;
+        }
+        .page-banner h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+        .page-banner p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        section {
+            padding: 2.5rem 0;
+            border-bottom: 1px solid #ffe0e0;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 1.8rem 0 1rem 0;
+            color: var(--primary-red);
+            border-left: 6px solid var(--primary-red);
+            padding-left: 1rem;
+        }
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        h3 {
+            color: var(--dark-red);
+            margin: 1.5rem 0 0.75rem;
+            font-size: 1.4rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        .legal-list {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        .legal-list li {
+            margin-bottom: 0.5rem;
+        }
+        .highlight-box {
+            background: var(--soft-cream);
+            border-left: 5px solid var(--accent-gold);
+            padding: 1.2rem 1.8rem;
+            border-radius: 24px;
+            margin: 1.5rem 0;
+        }
+        .note {
+            font-style: italic;
+            background: #fff0e0;
+            padding: 0.5rem 1.2rem;
+            border-radius: 30px;
+            display: inline-block;
+        }
+        .terms-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+        .terms-table th, .terms-table td {
+            border: 1px solid #ffd9d9;
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .terms-table th {
+            background: #fceaea;
+            color: var(--dark-red);
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--accent-gold);
+            color: var(--dark-red);
+            padding: 12px 32px;
+            margin-top: 0.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 40px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: var(--primary-red);
+            color: white;
+            transform: scale(1.02);
+        }
+        footer {
+            background: #2c1810;
+            color: #f0e6d0;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .footer-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .address, .contact {
+            font-size: 1.1rem;
+        }
+        .contact a {
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+        .copyright {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .page-banner h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.7rem;
+            }
+            .legal-list {
+                margin-left: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container nav">
+        <div class="logo">
+            <h1>🌿 YardScape Botanica</h1>
+            <p>Red-hot gardening wisdom</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="page-banner">
+    <div class="container">
+        <h1>📜 Terms of Service</h1>
+        <p>Rooted in fairness, transparency, and respect for every gardener.</p>
+    </div>
+</div>
+
+<div class="container">
+    <section>
+        <p><strong>Effective Date:</strong> April 24, 2025 | Last Updated: April 24, 2025</p>
+        <p>Welcome to YardScape Botanica ("Company", "we", "our", "us"). These Terms of Service ("Terms") govern your access to and use of our website (yardscapebotanica.com), digital tools, workshops, consultations, and any related content, products, or services (collectively, the "Services"). By accessing or using any part of our Services, you agree to be bound by these Terms. If you do not agree, please do not use our Services.</p>
+        <div class="highlight-box">
+            <strong>🌹 Quick summary:</strong> YardScape Botanica provides inspirational gardening knowledge, design consultations, and community resources. We value your privacy, encourage sustainable practices, and ask that you respect our intellectual property. These terms ensure a safe and supportive environment for all garden lovers.
+        </div>
+    </section>
+
+    <section>
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing our website, purchasing a product, signing up for a newsletter, attending a workshop, or interacting with any YardScape Botanica content, you confirm that you are at least 18 years old (or have parental/guardian consent) and capable of forming a binding contract. These Terms incorporate our <a href="privacy.html" style="color: var(--primary-red);">Privacy Policy</a> and <a href="cookies.html" style="color: var(--primary-red);">Cookies Policy</a> by reference. We may revise these Terms periodically; continued use after changes constitutes acceptance.</p>
+    </section>
+
+    <section>
+        <h2>2. Use of Our Services & User Responsibilities</h2>
+        <p>YardScape Botanica grants you a limited, non-exclusive, revocable license to access our content for personal, non-commercial use. You agree not to:</p>
+        <ul class="legal-list">
+            <li>❌ Copy, reproduce, distribute, or exploit any part of our content (including guides, images, plant databases) without written permission.</li>
+            <li>❌ Use our Services for any unlawful purpose or to harass, abuse, or harm others.</li>
+            <li>❌ Upload malicious code, spam, or false information to community forums or contact forms.</li>
+            <li>❌ Attempt to reverse-engineer, scrape, or bypass security measures of our website.</li>
+            <li>❌ Misrepresent your affiliation with YardScape Botanica or use our trademarks (e.g., "YardScape Botanica", "Crimson Collective", "Regenerative Red") without consent.</li>
+        </ul>
+        <p>We encourage lively, respectful conversation in our workshops and social channels. Any violation may result in suspension of access, legal action, or a permanent ban from our community.</p>
+    </section>
+
+    <section>
+        <h2>3. Products, Services & Consultations</h2>
+        <p>We offer digital gardening guides, downloadable templates, one-on-one design consultations, and limited physical products (e.g., seed collections). Descriptions and prices are subject to change. We reserve the right to modify or discontinue any offering without notice. For consultations:</p>
+        <ul class="legal-list">
+            <li>📅 You must provide accurate contact & site information for best results.</li>
+            <li>💰 Payment is due at the time of booking; cancellations within 48 hours receive a full refund; within 24 hours a 50% refund; no-shows forfeit fees.</li>
+            <li>🌱 Recommendations are based on horticultural expertise but final garden outcomes depend on environmental conditions, care, and unknown site factors.</li>
+        </ul>
+        <div class="terms-table">
+            <thead>
+                <tr><th>Service</th><th>Delivery / Schedule</th><th>Refund Policy</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Digital Guides / eBooks</td><td>Instant download after purchase</td><td>Non-refundable due to digital nature (unless technical error)</td></tr>
+                <tr><td>Design Consultation (60 min)</td><td>Scheduled via Zoom/on-site</td><td>72+ hours notice: full refund; 24-72h: 50% credit; less than 24h: no refund</td></tr>
+                <tr><td>Seed Pack / Garden Kits</td><td>Shipped within 5-7 business days</td><td>Return unopened within 14 days for refund (buyer pays return shipping)</td></tr>
+                <tr><td>Workshop Enrollment</td><td>Live or recorded access</td><td>Cancel 7+ days before workshop: full refund; within 7 days: credit toward future workshop</td></tr>
+            </tbody>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Intellectual Property Rights</h2>
+        <p>All content on this site — including but not limited to text, graphics, logos, videos, illustrations, plant profiles, design blueprints, and original photography — is the exclusive property of YardScape Botanica or its content creators and is protected by U.S. and international copyright laws. The YardScape Botanica name, "Crimson Collective" logo, "Red Pavilion" mark, and associated red-themed designs are trademarks of the Company. Unauthorized use, reproduction, or derivative creation is strictly prohibited. However, you may share excerpts on social media with proper attribution (link back to our site) and non-commercial intent.</p>
+        <div class="highlight-box">
+            🌟 <strong>Educational fair use:</strong> Teachers, community garden leaders, and non-profit educators may print limited copies of our free guides for workshops, as long as credit is given and the content is not sold.
+        </div>
+    </section>
+
+    <section>
+        <h2>5. User-Generated Content & Community Standards</h2>
+        <p>Our website may allow comments, forum posts, or photo submissions. By submitting content ("User Content"), you grant YardScape Botanica a worldwide, royalty-free, perpetual license to display, modify, and promote that content across our channels for marketing or educational purposes (with credit when feasible). You represent that you own or have permission to share the content. Prohibited content includes: offensive language, hate speech, spam, misleading botanical advice that could cause harm, and personal attacks. We reserve the right to remove any User Content at our sole discretion.</p>
+        <p>If you see content that violates these standards, please contact us at <a href="mailto:compliance@yardscapebotanica.com" style="color: var(--primary-red);">compliance@yardscapebotanica.com</a>.</p>
+    </section>
+
+    <section>
+        <h2>6. Disclaimer of Warranties & Limitation of Liability</h2>
+        <p>Gardening involves inherent risks: weather, pests, soil variability, and plant diseases. While we provide expert guidance, <strong>YardScape Botanica makes no guarantees about specific plant growth, harvest yields, or design outcomes</strong>. Our services are provided "AS IS" and "AS AVAILABLE" without warranties of merchantability, fitness for a particular purpose, or non-infringement. To the fullest extent permitted by law, YardScape Botanica, its affiliates, employees, or partners shall not be liable for any indirect, incidental, consequential, or punitive damages arising from your use of our Services, including crop failure, property damage, allergic reactions, or economic loss. Our total liability for any claim shall not exceed the amount paid by you to us in the past 6 months.</p>
+        <p><strong>Example:</strong> If we suggest a red climbing rose for your zone and an unexpected frost kills it, we are not responsible for replacement costs beyond a free care guide.</p>
+    </section>
+
+    <section>
+        <h2>7. Indemnification</h2>
+        <p>You agree to indemnify, defend, and hold harmless YardScape Botanica, its founders, employees, and contractors from any claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising from your violation of these Terms, misuse of our Services, or infringement of any third-party rights.</p>
+    </section>
+
+    <section>
+        <h2>8. Third-Party Links & Integrations</h2>
+        <p>Our website may contain links to external seed suppliers, gardening tool retailers, or informational websites. We do not endorse or assume responsibility for the content, privacy practices, or accuracy of those third-party sites. Your interactions with third parties are solely between you and them. Additionally, we utilize services like payment processors (e.g., Stripe) and webinar platforms (e.g., Zoom) which have their own terms, and you agree to comply with those as well.</p>
+    </section>
+
+    <section>
+        <h2>9. Privacy & Data Usage</h2>
+        <p>Your privacy matters. Personal information collected (name, email, address, garden zone) is used to fulfill orders, send newsletters (opt out anytime), and improve our services. We never sell your data to third parties. For complete details, see our <a href="privacy.html" style="color: var(--primary-red);">Privacy Policy</a> and <a href="cookies.html" style="color: var(--primary-red);">Cookies Policy</a>.</p>
+    </section>
+
+    <section>
+        <h2>10. Termination</h2>
+        <p>We may suspend or terminate your access to the Services immediately, without prior notice, for any breach of these Terms, fraudulent activity, or any conduct that harms YardScape Botanica or our community. Upon termination, your right to use the Services ceases, but provisions regarding intellectual property, liability, and indemnification shall survive.</p>
+    </section>
+
+    <section>
+        <h2>11. Governing Law & Dispute Resolution</h2>
+        <p>These Terms shall be governed by and construed in accordance with the laws of the State of Colorado, without regard to conflict of law principles. Any dispute arising from or relating to these Terms or the Services shall first be attempted to be resolved through informal negotiation (30 days). If unresolved, the dispute shall be submitted to binding arbitration in Denver, Colorado, under the rules of the American Arbitration Association. You agree to waive any right to participate in a class-action lawsuit against YardScape Botanica.</p>
+    </section>
+
+    <section>
+        <h2>12. Modifications to the Terms</h2>
+        <p>We update these Terms occasionally to reflect legal changes, new features, or evolving industry standards. The "Last Updated" date at the top of this page indicates when changes were made. For significant changes, we will notify you via email or a prominent notice on our website. Your continued use after the modification date constitutes acceptance.</p>
+    </section>
+
+    <section>
+        <h2>13. Contact Information</h2>
+        <p>If you have any questions, concerns, or requests regarding these Terms of Service, please reach out to us:</p>
+        <ul class="legal-list">
+            <li>✉️ Email: <a href="mailto:legal@yardscapebotanica.com" style="color: var(--primary-red);">legal@yardscapebotanica.com</a></li>
+            <li>📞 Phone: <a href="tel:+13035551234" style="color: var(--primary-red);">+1 (303) 555-1234</a> (Mon-Fri 9am-5pm MT)</li>
+            <li>📍 Address: 1262 Red Maple Lane, Garden Valley, CO 80241, Attn: Legal Department</li>
+        </ul>
+        <div class="highlight-box">
+            ❤️ We love our gardening community. Your compliance with these Terms helps us maintain a safe, fertile ground for creativity and growth. Thank you for cultivating responsibly with YardScape Botanica.
+        </div>
+    </section>
+
+    <!-- Additional acknowledgment / consent section -->
+    <section style="border-bottom: none;">
+        <h2>Acknowledgment of Terms</h2>
+        <p>By using any YardScape Botanica Services, you affirm that you have read, understood, and agreed to be bound by these Terms of Service, including any future amendments. If you are using the Services on behalf of an organization, you represent that you have the authority to bind that organization.</p>
+        <div style="text-align: center; margin: 2rem 0;">
+            <a href="#" class="btn" onclick="alert('Thank you for reviewing our Terms of Service. Happy gardening! 🌹'); return false;">📖 I Understand & Accept</a>
+        </div>
+        <p class="note">Last reviewed: April 24, 2025 — This document creates a binding agreement between you and YardScape Botanica.</p>
+    </section>
+</div>
+
+<footer>
+    <div class="container footer-info">
+        <div class="address">
+            📍 1262 Red Maple Lane, Garden Valley, CO 80241
+        </div>
+        <div class="contact">
+            📞 <a href="tel:+13035551234">+1 (303) 555-1234</a>  |  ✉️ hello@yardscapebotanica.com
+        </div>
+    </div>
+    <div class="copyright">
+        © 2025 YardScape Botanica – Cultivating passion, one red petal at a time. | <a href="terms.html" style="color: var(--accent-gold);">Terms of Service</a> | <a href="privacy.html" style="color: var(--accent-gold);">Privacy</a> | <a href="cookies.html" style="color: var(--accent-gold);">Cookies</a>
+    </div>
+</footer>
+
+</body>
+</html>

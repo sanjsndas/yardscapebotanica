@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Cookies Policy | YardScape Botanica – Red Hot Gardening Experts</title>
+    <meta name="description" content="YardScape Botanica cookies policy: learn how we use cookies to enhance your gardening experience, analyze site traffic, and personalize content. Manage your preferences.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff9f9;
+            color: #2c1810;
+            line-height: 1.5;
+        }
+
+        :root {
+            --primary-red: #b22222;
+            --dark-red: #8b0000;
+            --light-red: #ffcccc;
+            --accent-gold: #d4af37;
+            --earth-brown: #5c4033;
+            --leaf-green: #2e6b2f;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--dark-red), var(--primary-red));
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+        .logo p {
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            color: var(--accent-gold);
+            transform: translateY(-2px);
+        }
+
+        .page-banner {
+            background: linear-gradient(120deg, #5e1a1a, #9e2a2a);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .page-banner h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        .page-banner p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cookie-policy-card {
+            background: white;
+            border-radius: 32px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+            box-shadow: 0 20px 35px rgba(139, 0, 0, 0.08);
+            border: 1px solid #ffdfdf;
+        }
+
+        .cookie-policy-card h2 {
+            color: var(--primary-red);
+            font-size: 1.9rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 5px solid var(--primary-red);
+            padding-left: 1rem;
+        }
+        .cookie-policy-card h2:first-of-type {
+            margin-top: 0;
+        }
+        .cookie-policy-card h3 {
+            color: var(--earth-brown);
+            font-size: 1.4rem;
+            margin: 1.2rem 0 0.8rem;
+        }
+        .cookie-policy-card p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #2e241f;
+        }
+        .cookie-policy-card ul, .cookie-policy-card ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+        .cookie-policy-card li {
+            margin-bottom: 0.5rem;
+        }
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #fffaf5;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .cookie-table th, .cookie-table td {
+            border: 1px solid #ffcfcf;
+            padding: 12px 16px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .cookie-table th {
+            background-color: var(--light-red);
+            color: var(--dark-red);
+            font-weight: 700;
+        }
+        .badge-cookie {
+            background: var(--accent-gold);
+            color: var(--dark-red);
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 0.2rem 0.7rem;
+            border-radius: 30px;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .consent-box {
+            background: #fff0e8;
+            border-radius: 28px;
+            padding: 1.8rem;
+            margin: 2rem 0 1rem;
+            border-left: 6px solid var(--primary-red);
+        }
+        .btn-cookie {
+            background: var(--primary-red);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-right: 1rem;
+            margin-top: 0.5rem;
+            display: inline-block;
+        }
+        .btn-cookie:hover {
+            background: var(--dark-red);
+            transform: scale(0.98);
+        }
+        .btn-secondary {
+            background: #8b5a4b;
+        }
+        .btn-secondary:hover {
+            background: #5c3a2e;
+        }
+        .cookie-note {
+            background: #e7f0e4;
+            border-radius: 20px;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: #2c1810;
+            color: #f0e6d0;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .footer-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .copyright {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        a {
+            color: var(--primary-red);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: var(--accent-gold);
+        }
+
+        @media (max-width: 780px) {
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1.2rem;
+            }
+            .page-banner h1 {
+                font-size: 2rem;
+            }
+            .cookie-policy-card {
+                padding: 1.5rem;
+            }
+            .cookie-table th, .cookie-table td {
+                padding: 8px 10px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container nav">
+        <div class="logo">
+            <h1>🌿 YardScape Botanica</h1>
+            <p>Red-hot gardening wisdom</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="page-banner">
+    <div class="container">
+        <h1>🍪 Cookie Compliance & Transparency</h1>
+        <p>“Like a well-tended compost heap, cookies help us cultivate a richer experience.” – Discover how we use cookies to make your garden journey seamless.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="cookie-policy-card">
+        <h2>📜 Our Cookie Pledge</h2>
+        <p>At <strong>YardScape Botanica</strong> (the “red-hot gardening hub”), we believe in full transparency. This Cookies Policy explains what cookies are, how we use them, and the choices you have. By using our website, you consent to the use of cookies in accordance with this policy. If you disagree, please adjust your browser settings or refrain from using certain features.</p>
+
+        <h2>🌱 What are cookies?</h2>
+        <p>Cookies are tiny text files stored on your device (computer, tablet, or mobile) when you visit websites. They help us remember your preferences, analyse site traffic, and personalise content — much like a gardener remembers which plants thrive in which soil. Cookies are harmless and cannot carry viruses or install malware.</p>
+
+        <h2>🔥 How YardScape Botanica uses cookies</h2>
+        <p>We categorise cookies based on their function. Our goal is to enhance your gardening experience, whether you’re exploring red-themed garden layouts, signing up for workshops, or checking plant care guides.</p>
+
+        <table class="cookie-table">
+            <thead>
+                <tr><th>Cookie Type</th><th>Purpose</th><th>Examples & Duration</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="badge-cookie">🍪 Essential</span></td>
+                    <td>Necessary for core functionality: page navigation, secure areas, form submissions, and shopping cart (if applicable). Without these, the site may break.</td>
+                    <td>Session cookies (expire when you close the browser). Used for contact form CSRF protection, session consistency.</td>
+                </tr>
+                <tr>
+                    <td><span class="badge-cookie">📊 Performance / Analytics</span></td>
+                    <td>Collect anonymous info about how visitors use our website — which garden pages are most loved, bounce rates, and user flow. Helps us improve content.</td>
+                    <td>Google Analytics (_ga, _gid) – persistent up to 2 years. We anonymize IP addresses. No personal data stored.</td>
+                </tr>
+                <tr>
+                    <td><span class="badge-cookie">🎨 Functional / Preferences</span></td>
+                    <td>Remember your choices like preferred language, region, or if you’ve dismissed our cookie banner. Provides a more personalized feel.</td>
+                    <td>'cookie_consent_status' (duration 1 year), 'preferred_theme' (red mode or light).</td>
+                </tr>
+                <tr>
+                    <td><span class="badge-cookie">📢 Marketing & Social</span></td>
+                    <td>Used to deliver relevant gardening ads (e.g., crimson seed club) on third-party platforms and measure campaign effectiveness. Enabled only with your consent.</td>
+                    <td>Facebook Pixel, Pinterest Tag – duration up to 180 days. We respect “Do Not Track” signals from browsers where possible.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>✋ Your Control – Manage cookie preferences</h2>
+        <p>You're the head gardener of your data! You can accept or decline non-essential cookies at any time via our interactive consent tool (below). Most browsers also allow you to block or delete cookies through settings. However, disabling essential cookies may impact site functionality – like a greenhouse without sunlight.</p>
+
+        <div class="consent-box" id="cookieConsentBox">
+            <h3 style="margin-top: 0; color: var(--primary-red);">🍪 Refresh your cookie settings</h3>
+            <p>You previously gave consent (or not). Use the buttons below to update your preferences regarding <strong>Analytics</strong> and <strong>Marketing</strong> cookies. Essential cookies will always remain active to ensure the website works properly.</p>
+            <div>
+                <button id="acceptAllBtn" class="btn-cookie">🌿 Accept All Cookies</button>
+                <button id="declineNonEssentialBtn" class="btn-cookie btn-secondary">🌱 Decline Non-Essential</button>
+                <button id="customizeBtn" class="btn-cookie btn-secondary" style="background: #5c4033;">⚙️ Customize (Advanced)</button>
+            </div>
+            <div id="customizePanel" style="display: none; margin-top: 1.5rem; background: white; padding: 1rem; border-radius: 20px;">
+                <p><strong>Select cookie categories you allow:</strong></p>
+                <label style="display: block; margin-bottom: 0.6rem;"><input type="checkbox" id="essentialCheck" disabled checked> Essential (always active)</label>
+                <label style="display: block; margin-bottom: 0.6rem;"><input type="checkbox" id="analyticsCheck"> Performance / Analytics (Google Analytics, user insights)</label>
+                <label style="display: block; margin-bottom: 0.6rem;"><input type="checkbox" id="marketingCheck"> Marketing & Social (ad personalization, retargeting)</label>
+                <button id="savePreferencesBtn" class="btn-cookie" style="margin-top: 10px;">Save My Preferences</button>
+            </div>
+            <p id="consentFeedback" class="cookie-note" style="margin-top: 1rem; display: none;"></p>
+        </div>
+
+        <h2>📅 Third-party cookies & external services</h2>
+        <p>We occasionally embed content from gardening partners (e.g., YouTube tutorials on pruning red roses, Pinterest galleries of crimson flowerbeds). These services may set their own cookies. We do not control third-party cookies; we recommend reviewing their policies. Our site includes links to reputable sites, but our cookie policy only applies to YardScape Botanica domain.</p>
+
+        <h2>🌎 Duration and storage</h2>
+        <p>Session cookies disappear after you close your browser. Persistent cookies (like those storing your preferences) remain until they expire or you delete them. Most of our persistent cookies last no longer than 12 months, except analytics which may retain anonymized data for up to 26 months as aggregated statistics.</p>
+
+        <h2>📧 Updates to this Cookies Policy</h2>
+        <p>As our garden grows, we may revise this policy to align with new regulations or features. The “Last updated” date at the bottom indicates when changes were made. We encourage you to check occasionally. Significant changes will be notified via a banner on our homepage.</p>
+
+        <h2>🌻 More questions? Get in touch</h2>
+        <p>If you have any doubts about our use of cookies or wish to request details regarding your personal data processed via cookies (under GDPR/CCPA), please email our Data Protection Gardener at <a href="mailto:privacy@yardscapebotanica.com">privacy@yardscapebotanica.com</a> or call <a href="tel:+13035551234">+1 (303) 555-1234</a>. We're committed to responding within 15 business days.</p>
+        
+        <div class="cookie-note">
+            <strong>🕊️ Your privacy matters.</strong> We never sell your personal information. Cookie data is processed in accordance with our <a href="privacy.html">Privacy Policy</a> and applicable laws. By continuing to browse, you acknowledge this Cookies Policy.
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container footer-info">
+        <div class="address">
+            📍 1262 Red Maple Lane, Garden Valley, CO 80241
+        </div>
+        <div class="contact">
+            📞 <a href="tel:+13035551234" style="color: var(--accent-gold);">+1 (303) 555-1234</a>  |  ✉️ <a href="mailto:hello@yardscapebotanica.com" style="color: var(--accent-gold);">hello@yardscapebotanica.com</a>
+        </div>
+    </div>
+    <div class="copyright">
+        © 2025 YardScape Botanica – Cultivating passion, one red petal at a time. | <a href="privacy.html" style="color:#d4af37;">Privacy</a> | <a href="cookies.html" style="color:#d4af37;">Cookies</a> | <a href="terms.html" style="color:#d4af37;">Terms</a>
+        <br>Last updated: April 24, 2025 – Cookie Policy v2.0
+    </div>
+</footer>
+
+<script>
+    (function() {
+        // Cookie utility functions for demo/localStorage (simulated persistent consent)
+        // In real scenario: set actual cookies on domain, here we use localStorage to demonstrate preference management & banner.
+        const CONSENT_KEY = 'ysb_cookie_preferences';
+        
+        // Default preferences (all false except essential)
+        let currentPrefs = {
+            essential: true,
+            analytics: false,
+            marketing: false
+        };
+        
+        // Load saved preferences from localStorage if exist
+        function loadPreferences() {
+            const saved = localStorage.getItem(CONSENT_KEY);
+            if (saved) {
+                try {
+                    const parsed = JSON.parse(saved);
+                    currentPrefs = { ...currentPrefs, ...parsed };
+                } catch(e) { console.warn(e); }
+            }
+            updateCheckboxesFromPrefs();
+            applyCookieConsent(currentPrefs); // simulate applying cookies
+        }
+        
+        function savePreferences(prefs) {
+            localStorage.setItem(CONSENT_KEY, JSON.stringify(prefs));
+            currentPrefs = prefs;
+            applyCookieConsent(prefs);
+            updateCheckboxesFromPrefs();
+            showFeedbackMessage(`Preferences saved! Analytics: ${prefs.analytics ? 'enabled' : 'disabled'} | Marketing: ${prefs.marketing ? 'enabled' : 'disabled'}.`);
+        }
+        
+        function applyCookieConsent(prefs) {
+            // In production, you would enable/disable actual tracking scripts (e.g., Google Analytics, Facebook Pixel)
+            // For demo purposes, we console.log and optionally set a dummy cookie to reflect consent.
+            console.log('[YardScape Botanica] Cookie consent applied:', prefs);
+            if (prefs.analytics) {
+                // simulate enabling analytics (eg. load GA script simulation)
+                window._gaEnabled = true;
+                console.log('✅ Analytics cookies would be activated now (GA)');
+            } else {
+                window._gaEnabled = false;
+                console.log('❌ Analytics cookies blocked / disabled');
+            }
+            if (prefs.marketing) {
+                window._marketingEnabled = true;
+                console.log('🎯 Marketing cookies would be activated (social pixels)');
+            } else {
+                window._marketingEnabled = false;
+                console.log('🚫 Marketing cookies blocked');
+            }
+            // set a flag cookie "cookie_consent_status" (functional)
+            document.cookie = "cookie_consent_status=acknowledged; path=/; max-age=" + 60*60*24*365;
+        }
+        
+        function updateCheckboxesFromPrefs() {
+            const analyticsChk = document.getElementById('analyticsCheck');
+            const marketingChk = document.getElementById('marketingCheck');
+            if (analyticsChk) analyticsChk.checked = currentPrefs.analytics;
+            if (marketingChk) marketingChk.checked = currentPrefs.marketing;
+        }
+        
+        function showFeedbackMessage(msg, isError = false) {
+            const feedbackDiv = document.getElementById('consentFeedback');
+            if (feedbackDiv) {
+                feedbackDiv.textContent = msg;
+                feedbackDiv.style.display = 'block';
+                feedbackDiv.style.background = isError ? '#ffe0e0' : '#e0f2e0';
+                feedbackDiv.style.color = isError ? '#b22222' : '#2e6b2f';
+                setTimeout(() => {
+                    feedbackDiv.style.display = 'none';
+                }, 5000);
+            }
+        }
+        
+        // Accept all (both analytics and marketing)
+        function acceptAll() {
+            const newPrefs = {
+                essential: true,
+                analytics: true,
+                marketing: true
+            };
+            savePreferences(newPrefs);
+            showFeedbackMessage('🍪 You accepted all cookies! Analytics and marketing cookies are now active. Thank you for supporting our red-hot garden!');
+            if (document.getElementById('customizePanel')) document.getElementById('customizePanel').style.display = 'none';
+        }
+        
+        // Decline non-essential (only essential)
+        function declineNonEssential() {
+            const newPrefs = {
+                essential: true,
+                analytics: false,
+                marketing: false
+            };
+            savePreferences(newPrefs);
+            showFeedbackMessage('🌿 Non-essential cookies declined. Only necessary cookies will function. You can change this anytime using the customize options.');
+            if (document.getElementById('customizePanel')) document.getElementById('customizePanel').style.display = 'none';
+        }
+        
+        // show/hide customize panel
+        function toggleCustomize() {
+            const panel = document.getElementById('customizePanel');
+            if (panel) {
+                panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+                updateCheckboxesFromPrefs();
+            }
+        }
+        
+        function saveCustomPreferences() {
+            const analyticsEnabled = document.getElementById('analyticsCheck').checked;
+            const marketingEnabled = document.getElementById('marketingCheck').checked;
+            const newPrefs = {
+                essential: true,
+                analytics: analyticsEnabled,
+                marketing: marketingEnabled
+            };
+            savePreferences(newPrefs);
+            showFeedbackMessage(`Custom preferences saved: Analytics = ${analyticsEnabled ? 'ON' : 'OFF'}, Marketing = ${marketingEnabled ? 'ON' : 'OFF'}.`);
+        }
+        
+        // Attach event listeners after DOM ready
+        document.addEventListener('DOMContentLoaded', function() {
+            loadPreferences();
+            const acceptBtn = document.getElementById('acceptAllBtn');
+            const declineBtn = document.getElementById('declineNonEssentialBtn');
+            const customizeBtn = document.getElementById('customizeBtn');
+            const savePrefBtn = document.getElementById('savePreferencesBtn');
+            if (acceptBtn) acceptBtn.addEventListener('click', acceptAll);
+            if (declineBtn) declineBtn.addEventListener('click', declineNonEssential);
+            if (customizeBtn) customizeBtn.addEventListener('click', toggleCustomize);
+            if (savePrefBtn) savePrefBtn.addEventListener('click', saveCustomPreferences);
+            
+            // Initialize panel hidden
+            const panel = document.getElementById('customizePanel');
+            if (panel) panel.style.display = 'none';
+            
+            // Also create simple simulated cookie banner that respects DNT? Not needed but for extra UX.
+            // We already show consent box inline.
+        });
+    })();
+</script>
+<!-- This Cookies Policy page includes detailed information, interactive consent management, accessibility and brand-consistent style -->
+</body>
+</html>
